@@ -255,9 +255,14 @@ li {
  <div class="from">  
  	<div class="generator__questions">
     <label>Movie Name</label>
-    <input id="tit" type="text" placeholder="#Home"/>
+    <input id="tit" type="text" />
   </div>
-   
+  
+   <div class="from">  
+ 	<div class="generator__questions">
+    <label>Link Text</label>
+    <input id="url" type="text" />
+  </div>
   
   
     
@@ -303,6 +308,7 @@ generate.addEventListener('click', () => {
 	
 	const tit = document.querySelector('#tit').value;
 	
+	const url = document.querySelector('#url').value;
 
 	
 	const markupContainer = document.querySelector('.generator__markup-generated');
@@ -310,7 +316,7 @@ generate.addEventListener('click', () => {
 	const markup = `
 
 
-<a href="https://app.dvdplaymv.com/"><b>${tit}</b></a> <br/>
+<b>${tit}&nbsp<a href="https://app.dvdplaymv.com/"></a></b><br/>
 
 	`;
 	
