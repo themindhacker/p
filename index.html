@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html class='ltr' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+
+<title>Post</title>
+
+<link href='https://raw.githubusercontent.com/themindhacker/image/main/dvdplay.png' rel='icon' sizes='512x512' type='image/png'/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="robots" content="noindex, nofollow" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+<style>
+
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  font-family: 'Roboto';
+
+  display: block;
+
+  background: #e0e0e0;
+
+  font-size: 16px;
+
+}
+
+.btn {
+
+  line-height: 24px;
+
+  height: 36px;
+
+  font-size: 15px;
+
+  vertical-align: top;
+
+}
+
+.body {
+
+  max-width: 800px;
+
+  margin: auto;
+
+  background: #fff;
+
+  border-radius: 20px;
+
+  box-shadow: 0 2px 10px 0 #cac9c9;
+
+  padding-top: 10px;
+
+  padding-bottom: 20px;
+
+}
+
+.navbar {
+
+  background-image: linear-gradient(to right, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+
+  display: block;
+
+  border-radius: 0px;
+
+  padding: none;
+
+  color: #000;
+
+  box-shadow: 0px 0px 15px 0 rgb(0 0 0 / 23%);
+
+  border-bottom: 3px solid #fff;
+
+  font-size: 24px;
+
+  user-select: none;
+
+  cursor: pointer;
+
+}
+
+.navbar-brand {
+
+  font-size: 24px;
+
+  color: #FFF;
+
+  user-select: none;
+
+  cursor: pointer;
+
+}
+
+.navbar-brand:hover {
+
+  font-size: 24px;
+
+  color: #fff;
+
+}
+
+p {
+
+  text-align: left;
+
+  padding-left: 20px;
+
+  padding-right: 10px;
+
+  margin-bottom: 15px;
+
+  line-height: 1.4em;
+
+}
+
+h1 {
+
+  font-size: 24px;
+
+  text-align: center;
+
+  font-weight: 600;
+
+}
+
+h2 {
+
+  font-size: 20px;
+
+  background-image: linear-gradient(to right, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+
+  color: #FFF;
+
+  padding: 15px;
+
+  box-shadow: 0 2px 10px 0 #cac9c9;
+
+  font-weight: 600;
+
+}
+
+h3 {
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+}
+
+button {
+
+  background-color: #ff0000; /* Green */
+
+  color: white;
+
+  padding: 10px 80px;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  display: inline-block;
+
+      font-size: inherit;
+
+    line-height: inherit;
+
+  box-shadow: 0px 7px 10px 0 rgb(0 0 0 / 33%);
+
+  border: 3px solid #fff;
+
+  border-radius: 60px;
+
+}
+
+button:hover {
+
+  background-color: #fff;
+
+  color: #ff0000;
+
+  border: 3px solid #ff0000;
+
+}
+
+footer {
+
+  background-image: linear-gradient(to right, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+
+  color: #000;
+
+  text-align: center;
+
+  margin-top: 10px;
+
+  overflow: hidden;
+
+  position: relative;
+
+  user-select: none;
+
+}
+
+.itemd {
+
+  max-width: 100%;
+
+    display: inline-block;
+
+    vertical-align: bottom;
+
+    overflow-x: auto;
+
+    overflow-y: hidden;
+
+    white-space: nowrap;
+
+    user-select: none;
+
+    text-decoration: none;
+
+}
+
+.item {
+
+  text-decoration: none;
+
+  background: #ff0000;
+
+  margin-left: 2px;
+
+  color: #fff;
+
+  padding: 10px 20px;
+
+  display: inline-flex;
+
+    flex-shrink: 0!important;
+
+    cursor: pointer;
+
+    user-select: none;
+
+}
+
+.item:hover {
+
+  text-decoration: none;
+
+  background: #ff0000;
+
+  color: #000;
+
+}
+
+.active, .item:hover {
+
+  background-color: #fff;
+
+  color: #000;
+
+}
+
+.btn {
+
+  line-height: 24px;
+
+  height: 36px;
+
+  font-size: 15px;
+
+  vertical-align: top;
+
+}
+
+.from {
+
+  text-align: center;
+
+  max-width: 400px;
+
+  margin: auto;
+
+    border-radius: 5px;
+
+  background-color: #f2f2f2;
+
+  padding: 20px;
+
+  box-shadow: 0 2px 10px 0 #cac9c9;
+
+}
+
+.content {
+
+  background: #fff;
+
+}
+
+.center {
+
+  max-width: 400px;
+
+  margin: auto;
+
+}
+
+input[type=text], select {
+
+  width: 100%;
+
+  padding: 12px 20px;
+
+  margin: 8px 0;
+
+  display: inline-block;
+
+  border: 1px solid #ccc;
+
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+}
+
+input[type=submit] {
+
+  width: 100%;
+
+  background-color: #4CAF50;
+
+  color: white;
+
+  padding: 14px 20px;
+
+  margin: 8px 0;
+
+  border: none;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+
+  background-color: #45a049;
+
+}
+
+ul {
+
+  text-align: left;
+
+  padding: 20px;
+
+  margin-left: 30px;
+
+}
+
+li {
+
+  margin-bottom: 5px;
+
+}
+
+	</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+  <a class="navbar-brand" href="/">Post Genarator</a>
+
+</nav>
+
+<div></div>
+
+<center>
+
+  <div class="itemd">
+
+      
+
+    </div>
+
+</center>
+
+<!-- Heading & Description -->
+
+<div class="body">
+
+<div class="generator">
+
+    <!-- Heading & Description -->
+
+    
+
+       <hr>
+
+       
+
+ <div class="from">  
+
+ 	<div class="generator__questions">
+
+    <label>Movie Name</label>
+
+    <input id="tit" type="text" placeholder="#Home"/>
+
+  </div>
+
+   <div class="generator__questions">
+
+    <label>Discription</label>
+
+    <input id="name" type="text" placeholder="This movie is about...."/>
+
+  </div>
+
+  
+
+  <div class="generator__questions">
+
+    <label>Image URL</label>
+
+    <input id="url" type="text" placeholder="https://dl.dvdplaymv.com/file.png"/>
+
+  </div>
+
+  
+
+  
+
+    
+
+    
+
+    <div class="generator__questions" style="text-align: center;"><br />
+
+    </div>
+
+    
+
+  </div>
+
+<br>
+
+    <div class="generator__questions" style="text-align: center;">&nbsp;
+
+    <button class="generate-markup">Generate</button>
+
+  </div></br>
+
+  <div class="generator__markup">
+
+    <h2 style="text-align: center;">Ringtone Point</h2>
+
+<pre><div style="text-align: center;" ></div>
+
+      <p id="p2"><code class="generator__markup-generated"></code></p>
+
+      <div style="text-align: center;"></div>
+
+</pre>
+
+<center>
+
+<button onclick="copyToClipboard('#p2')">📋 COPY</button></center></div></div> 
+
+  <hr>
+
+</div>
+
+  <center>
+
+<!-- Paste Details Here -->
+
+ <footer>
+
+  <div class="itemd">
+
+      <a class="item" href="/">Created by Dvdplaymv.com</a>
+
+      
+
+      </div>
+
+  </footer>
+
+  
+
+<script type='text/javascript'>  
+
+  //<![CDATA[
+
+const generate = document.querySelector('.generate-markup');
+
+generate.addEventListener('click', () => {
+
+	const name = document.querySelector('#name').value;
+
+	const tit = document.querySelector('#tit').value;
+
+	const url = document.querySelector('#url').value;
+
+	
+
+	const markupContainer = document.querySelector('.generator__markup-generated');
+
+	
+
+	const markup = `
+
+<a href="https://app.dvdplaymv.com/"><b>${tit}</b></a> <br/>
+
+	`;
+
+	
+
+	markupContainer.textContent = markup;
+
+});
+
+function copyToClipboard(element) {
+
+  var $temp = $("<input>");
+
+  $("body").append($temp);
+
+  $temp.val($(element).text()).select();
+
+  document.execCommand("copy");
+
+  $temp.remove();
+
+}
+
+//]]>
+
+ </script>
+
+</body>
+
+</html>
