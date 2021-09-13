@@ -1,11 +1,8 @@
 
-
-
 <!DOCTYPE html>
-<?xml version="1.0" encoding="UTF-8"?>
-<html class='ltr' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html>
 <head>
-<title>Post</title>
+<title>Post Generator</title>
 <link href='https://raw.githubusercontent.com/themindhacker/image/main/dvdplay.png' rel='icon' sizes='512x512' type='image/png'/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +14,30 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
-
+<script type='text/javascript'>
+//<![CDATA[
+var uri = window.location.toString();
+if (uri.indexOf("%3D","%3D") > 0) {
+var clean_uri = uri.substring(0, uri.indexOf("%3D"));
+window.history.replaceState({}, document.title, clean_uri);
+}
+var uri = window.location.toString();
+if (uri.indexOf("%3D%3D","%3D%3D") > 0) {
+var clean_uri = uri.substring(0, uri.indexOf("%3D%3D"));
+window.history.replaceState({}, document.title, clean_uri);
+}
+var uri = window.location.toString();
+if (uri.indexOf("&m=1","&m=1") > 0) {
+var clean_uri = uri.substring(0, uri.indexOf("&m=1"));
+window.history.replaceState({}, document.title, clean_uri);
+}
+var uri = window.location.toString();
+if (uri.indexOf("?m=1","?m=1") > 0) {
+var clean_uri = uri.substring(0, uri.indexOf("?m=1"));
+window.history.replaceState({}, document.title, clean_uri);
+}
+//]]>
+</script>
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
@@ -229,6 +249,8 @@ li {
 }
 	</style>
 
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
 </head>
 
 <body>
@@ -251,19 +273,20 @@ li {
     <!-- Heading & Description -->
     
        <hr>
-       
  <div class="from">  
- 	<div class="generator__questions">
+   <div class="generator__questions">
     <label>Movie Name</label>
-    <input id="tit" type="text" />
+    <input id="name" type="text" placeholder="KGF"/>
   </div>
   
-   <div class="from">  
- 	<div class="generator__questions">
-    <label>Link Text</label>
-    <input id="url" type="text" />
+  <div class="generator__questions">
+    <label>Image URL</label>
+    <input id="url" type="text" placeholder="https://dvdplaymv.com/file.png"/>
   </div>
-  
+    <div class="generator__questions">
+    <label>Language</label>
+    <input id="lang" type="text" placeholder="Malayalam"/>
+  </div>
   
     
     
@@ -276,7 +299,7 @@ li {
     <button class="generate-markup">Generate</button>
   </div></br>
   <div class="generator__markup">
-    <h2 style="text-align: center;">Ringtone Point</h2>
+    <h2 style="text-align: center;">HIHI</h2>
 
 <pre><div style="text-align: center;" ></div>
       <p id="p2"><code class="generator__markup-generated"></code></p>
@@ -294,7 +317,7 @@ li {
 
  <footer>
   <div class="itemd">
-      <a class="item" href="/">Created by Dvdplaymv.com</a>
+      <a class="item" href="/">Created by Udayip</a>
       
       </div>
   </footer>
@@ -305,18 +328,77 @@ li {
 const generate = document.querySelector('.generate-markup');
 
 generate.addEventListener('click', () => {
-	
-	const tit = document.querySelector('#tit').value;
-	
+	const name = document.querySelector('#name').value;
 	const url = document.querySelector('#url').value;
-
-	
+	const lang = document.querySelector('#lang').value;
 	const markupContainer = document.querySelector('.generator__markup-generated');
 	
 	const markup = `
 
+<div class="separator" style="clear: both;">So, finally, the ${name} web series was released and now you guys want to download ${name} web series 720p then you are at the right place where you will get all that you want. Before starting our article make sure you know about the Tamilrockers website.</div><div class="separator" style="clear: both;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="https://app.dvdplaymv.com/" style="margin-left: 1em; margin-right: 1em;"><img alt="${name} Full web series Download" border="0" data-original-height="720" data-original-width="1280" height="113" src="${url}" title="${name} Full web series Download" width="200" /></a></div>
 
-<b>${tit}&nbsp<a href="https://app.dvdplaymv.com/">${url}</a></b><br/>
+<center>
+  <br />
+<a href="https://app.dvdplaymv.com/"><button class="btn"><i class="fa fa-download"></i>&nbsp;Download</button></a>
+<br />
+  </center>
+<p>
+Let me give you a short review about TamilRockers, TamilRockers is a web series downloading website where you can get all your web series in HD quality Tamil rockers is a very big website which Leaks a lot of web series every month.
+
+
+Recently this website leaks the newly released ${lang} language web series named ${name} the web series was released recently and after one day TamilRockers Leaks this web series on their website.</p>
+
+<h2>${name} full web series download 720p Tamilrockers</h2>
+<p>
+So you guys want to download ${name} full web series 720p. The best way to download it is just simply going to TamilRockers official website make sure to check out the website domain for visiting that website from this website of TamilRockers you can get this web series easily.</p>
+<br />
+<p>
+  
+if you are facing any problem downloading your favorite web series from the TamilRockers website then you can comment down below we will try to help you out. But we want to tell you that Tamilrockers is a pirated web series downloading website.</p>
+<br />
+<p>
+make sure you guys visit at your own risk because piracy of any type of content is illegal. if you want to go TamilRockers website then and always try any free or paid VPN for your protection
+</p>
+<br />
+<center>
+<h2>New Links Of TamilRockers</h2>
+<table><tbody><tr><td>TamilRockers.ph</td><td>TamilRockers.com</td></tr><tr><td>TamilRockers.co</td><td>TamilRockers.bz</td></tr><tr><td>TamilRockers.pl</td><td>TamilRockers.in</td></tr><tr><td>TamilRockers.wc</td><td>TamilRockers.net</td></tr><tr><td>TamilRockers.ms</td><td>TamilRockers.by</td></tr><tr><td>TamilRockers.net</td><td>TamilRockers.org</td></tr><tr><td>TamilRockers.biz</td><td>TamilRockers.lol</td></tr><tr><td>TamilRockers.de</td><td>TamilRockers.icu</td></tr><tr><td>TamilRockers.to</td><td>TamilRockers.do</td></tr></tbody></table>
+</center>
+<p>These is the list of recently banned domain names of tamilrockers due to promoting pirated content</p>
+<br />
+<h2>How to Download ${name} From Tamilrockers?</h2>
+<br />
+<p>
+The biggest question that how to download your favorite web series from the TamilRockers website. first of all, just visit TamilRockers website and search for the web series you can use the search option for that or you can also search manually, and after getting a web series just click on that web series.
+</p>
+<br />
+<p>
+Here you will see two options one is for web series download and others for a watch it online now it’s up to you you want to download the web series or you want to watch it online.
+</p>
+<br />
+
+<p>
+We suggest you watch the ${name} web series free because it saves you more time and also Tamil rockers website is ads-free. which means no more disturbance of ads.
+</p>
+<br />
+<center>
+<h2>${name} Full web series Info</h2>
+<table><tbody><tr><td>Web Series Name</td><td>${name}</td></tr><tr><td>Language</td><td>${lang}</td></tr><tr><td>Country</td><td>US</td></tr><tr><td>Resolution</td><td>1080p HD, 720p, 360p, 480p</td></tr><tr><td>Budget</td><td>19 Cr</td></tr><tr><td>Rating</td><td>4.7</td></tr></tbody></table>
+  </center>
+<p>
+Now it’s up to you what you want. if you choose the download button then I will tell you that the server speed of downloading is very fast on the Tamilrockers website and you can easily and fastly download your favorite web series.
+</p>
+<h2>Disclaimer</h2>
+
+<p>
+We never engage our visiter to go to any web series downloading websites Like Tamilrockers for the latest web series, and also we did not promote any website. This article is only for Education purposes.</p>
+
+<p>
+As per the USA act, piracy of original content is punishable. These websites are not safe to download any web series. If you want to download any web series, please download it at your own risk.
+</p>
+
+
+
 
 	`;
 	
