@@ -1,43 +1,21 @@
 
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
 <title>Post Generator</title>
-<link href='https://raw.githubusercontent.com/themindhacker/image/main/dvdplay.png' rel='icon' sizes='512x512' type='image/png'/>
+<link href='https://eng.dvdplaymv.com/android-chrome-512x512.png' rel='icon' sizes='512x512' type='image/png' />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow" />
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-
-<script type='text/javascript'>
-//<![CDATA[
-var uri = window.location.toString();
-if (uri.indexOf("%3D","%3D") > 0) {
-var clean_uri = uri.substring(0, uri.indexOf("%3D"));
-window.history.replaceState({}, document.title, clean_uri);
-}
-var uri = window.location.toString();
-if (uri.indexOf("%3D%3D","%3D%3D") > 0) {
-var clean_uri = uri.substring(0, uri.indexOf("%3D%3D"));
-window.history.replaceState({}, document.title, clean_uri);
-}
-var uri = window.location.toString();
-if (uri.indexOf("&m=1","&m=1") > 0) {
-var clean_uri = uri.substring(0, uri.indexOf("&m=1"));
-window.history.replaceState({}, document.title, clean_uri);
-}
-var uri = window.location.toString();
-if (uri.indexOf("?m=1","?m=1") > 0) {
-var clean_uri = uri.substring(0, uri.indexOf("?m=1"));
-window.history.replaceState({}, document.title, clean_uri);
-}
-//]]>
-</script>
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
@@ -248,157 +226,357 @@ li {
   margin-bottom: 5px;
 }
 	</style>
-
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
+<meta name='google-adsense-platform-domain' content='blogspot.com' />
 </head>
-
 <body>
-
 <nav class="navbar">
-  <a class="navbar-brand" href="/">Post Genarator</a>
+<a class="navbar-brand" href="/">Post Genarator</a>
 </nav>
 <div></div>
 <center>
-  <div class="itemd">
-      
-    </div>
+<div class="itemd">
+</div>
 </center>
-<!-- Heading & Description -->
 
 <div class="body">
 <div class="generator">
 
+<hr>
+<div class="from">
+<div class="generator__questions">
+<label>Movie Name</label>
+<input id="name" type="text" placeholder="KGF" />
+</div>
 
-    <!-- Heading & Description -->
-    
-       <hr>
- <div class="from">  
-   <div class="generator__questions">
-    <label>Movie Name</label>
-    <input id="name" type="text" placeholder="KGF"/>
-  </div>
-  
-  <div class="generator__questions">
-    <label>Image URL</label>
-    <input id="url" type="text" placeholder="https://dvdplaymv.com/file.png"/>
-  </div>
-    <div class="generator__questions">
-    <label>Language</label>
-    <input id="lang" type="text" placeholder="Malayalam"/>
-  </div>
-  
-    
-    
-    <div class="generator__questions" style="text-align: center;"><br />
-    </div>
-    
-  </div>
+<div class="generator__questions">
+<label>Language</label>
+<input id="lang" type="text" placeholder="Malayalam" />
+</div>
+
+<div class="generator__questions" style="text-align: center;"><br />
+</div>
+</div>
 <br>
-    <div class="generator__questions" style="text-align: center;">&nbsp;
-    <button class="generate-markup">Generate</button>
-  </div></br>
-  <div class="generator__markup">
-    <h2 style="text-align: center;">HIHI</h2>
-
-<pre><div style="text-align: center;" ></div>
+<div class="generator__questions" style="text-align: center;">&nbsp;
+<button class="generate-markup">Generate</button>
+</div></br>
+<div class="generator__markup">
+<h2 style="text-align: center;">HIHI</h2>
+<pre><div style="text-align: center;"></div>
       <p id="p2"><code class="generator__markup-generated"></code></p>
       <div style="text-align: center;"></div>
 </pre>
 <center>
-<button onclick="copyToClipboard('#p2')">📋 COPY</button></center></div></div> 
-  <hr>
+<button onclick="copyToClipboard('#p2')">📋 COPY</button></center></div></div>
+<hr>
 </div>
+<center>
 
-
-  <center>
-<!-- Paste Details Here -->
-
-
- <footer>
-  <div class="itemd">
-      <a class="item" href="/">Created by Udayip</a>
-      
-      </div>
-  </footer>
-
-  
+<footer>
+<div class="itemd">
+<a class="item" href="/">Created by Udayip</a>
+</div>
+</footer>
 <script type='text/javascript'>  
   //<![CDATA[
 const generate = document.querySelector('.generate-markup');
 
 generate.addEventListener('click', () => {
 	const name = document.querySelector('#name').value;
-	const url = document.querySelector('#url').value;
 	const lang = document.querySelector('#lang').value;
 	const markupContainer = document.querySelector('.generator__markup-generated');
 	
 	const markup = `
 
-<div class="separator" style="clear: both;">So, finally, the ${name} web series was released and now you guys want to download ${name} web series 720p then you are at the right place where you will get all that you want. Before starting our article make sure you know about the Tamilrockers website.</div><div class="separator" style="clear: both;"><br /></div><div class="separator" style="clear: both; text-align: center;"><a href="https://files.dvdplaymv.com/" style="margin-left: 1em; margin-right: 1em;"><img alt="${name} Full web series Download" border="0" data-original-height="720" data-original-width="1280" height="113" src="${url}" title="${name} Full web series Download" width="200" /></a></div>
-
-<center>
-  <br />
-<iframe  name="iframe1" src="https://m.dvdplaymv.com/" style="width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;" ></iframe>
-<br />
-  </center>
-<p>
-Let me give you a short review about TamilRockers, TamilRockers is a web series downloading website where you can get all your web series in HD quality Tamil rockers is a very big website which Leaks a lot of web series every month.
 
 
-Recently this website leaks the newly released ${lang} language web series named ${name} the web series was released recently and after one day TamilRockers Leaks this web series on their website.</p>
-
-<h2>${name} full web series download 720p Tamilrockers</h2>
-<p>
-So you guys want to download ${name} full web series 720p. The best way to download it is just simply going to TamilRockers official website make sure to check out the website domain for visiting that website from this website of TamilRockers you can get this web series easily.</p>
-<br />
-<p>
-  
-if you are facing any problem downloading your favorite web series from the TamilRockers website then you can comment down below we will try to help you out. But we want to tell you that Tamilrockers is a pirated web series downloading website.</p>
-<br />
-<p>
-make sure you guys visit at your own risk because piracy of any type of content is illegal. if you want to go TamilRockers website then and always try any free or paid VPN for your protection
+    <p style="text-align: left;">
+    So finally the latest movie ${name} was released. This is one of my favorite films I have viewed the movie was very awesome almost everyone who watches this movie will like this movie Oh no we are moving from our topic.
+</p>
+<p style="text-align: left;">
+    Today I am going to explain to you how to download ${name} from Movierulz for free within a few clicks but before that let me explain some information about Movierulz. Movierulz is a team that leaks all the latest movies illegally on
+    the internet for free.&nbsp;
+</p>
+<p style="text-align: left;">
+    Before starting our article you must know some important information about Movierulz and piracy.&nbsp; Movierulz is a movie downloading website where you get HD Quality movies they don't share direct files they share torrent links you
+    need to have a torrent app or use a telegram bot to extract files from torrent links. Movierulz is making a huge loss to the film industry.&nbsp;
 </p>
 <br />
+<div class="down">
+    <h2 style="text-align: left;">${name} Full Movie Download Links</h2>
+    <div>
+        Here is the download link of the latest Tamil movie ${name}.&nbsp; You can download the movie just by clicking on the buttons below. I Recommend you use the Google Drive link. Gdrive has a very fast server. On the next page, you can
+        choose which quality you want. There is 3 quality available 480,720p, 1080p. 480p file size is between 400MB to 480MB. 720p file size is between 650MB to 800MB. 1080p file size is between 900MB to 1.5GB
+    </div>
+    <div><br /></div>
+    <center>
+        <h3 style="text-align: center;">${name} Full Movie Google Drive Download Link:</h3>
+        <br />
+        <a href="https://files.dvdplaymv.com/">
+            <button><i class="fa fa-download"></i>&nbsp;Download</button>
+        </a>
+        <br />
+        <h3 style="text-align: center;">${name} Full Movie Direct Download Link From Tamilrockers Server :</h3>
+        <br />
+        <a href="https://files.dvdplaymv.com/">
+            <button><i class="fa fa-download"></i>&nbsp;Download</button>
+        </a>
+        <br />
+        <h3 style="text-align: center;">${name} Full Movie Mega Download Link:</h3>
+        <br />
+        <a href="https://files.dvdplaymv.com/">
+            <button><i class="fa fa-download"></i>&nbsp;Download</button>
+        </a>
+        <br />
+        <h3 style="text-align: center;">${name} Full Movie Anonfiles Download Link</h3>
+        <br />
+        <a href="https://files.dvdplaymv.com/">
+            <button><i class="fa fa-download"></i>&nbsp;Download</button>
+        </a>
+        <br />
+    </center>
+</div>
+
+<h2 style="text-align: left;">Is torrent is illegal?</h2>
+<div>No torrent is not illegal in any manner. It is awesome technology. But the sad part is torrent is mainly used for sharing copyright content or for piracy.&nbsp;</div>
+<div><br /></div>
+<div>It is an illegal account of Indian law. In some countries, piracy is not illegal countries if you are from there you can use Movierulz and other pirated websites to download movies.&nbsp;</div>
+<div><br /></div>
+<h2 style="text-align: left;">Why authorities can't stop websites like Movierulz</h2>
+<div>Because owners of pirated websites like Movierulz, Isaimini, Tamilmv, Tamilblasters.</div>
+<div><br /></div>
+<div>&nbsp;Are anonymous they keep everything private and they are operating from outside India where piracy is not illegal.&nbsp;</div>
+<div><br /></div>
+<div>So authorities can only ban their domain names with an Internet service provider like jio, Vi, Airtel, etc. But admins of Movierulz are very smart they just change the domain name extensions from .com to .in, .org, .ws .xyz, etc.</div>
+<div><br /></div>
+<h2 style="text-align: left;">Recently block Movierulz domain names are :</h2>
 <center>
-<h2>New Links Of TamilRockers</h2>
-<table><tbody><tr><td>TamilRockers.ph</td><td>TamilRockers.com</td></tr><tr><td>TamilRockers.co</td><td>TamilRockers.bz</td></tr><tr><td>TamilRockers.pl</td><td>TamilRockers.in</td></tr><tr><td>TamilRockers.wc</td><td>TamilRockers.net</td></tr><tr><td>TamilRockers.ms</td><td>TamilRockers.by</td></tr><tr><td>TamilRockers.net</td><td>TamilRockers.org</td></tr><tr><td>TamilRockers.biz</td><td>TamilRockers.lol</td></tr><tr><td>TamilRockers.de</td><td>TamilRockers.icu</td></tr><tr><td>TamilRockers.to</td><td>TamilRockers.do</td></tr></tbody></table>
+    <table>
+        <tbody>
+            <tr>
+                <td>Movierulz.ph</td>
+                <td>Movierulz.com</td>
+            </tr>
+            <tr>
+                <td>Movierulz.co</td>
+                <td>Movierulz.bz</td>
+            </tr>
+            <tr>
+                <td>Movierulz.pl</td>
+                <td>Movierulz.in</td>
+            </tr>
+            <tr>
+                <td>Movierulz.wc</td>
+                <td>Movierulz.net</td>
+            </tr>
+            <tr>
+                <td>Movierulz.ms</td>
+                <td>Movierulz.by</td>
+            </tr>
+            <tr>
+                <td>Movierulz.net</td>
+                <td>Movierulz.org</td>
+            </tr>
+            <tr>
+                <td>Movierulz.biz</td>
+                <td>Movierulz.lol</td>
+            </tr>
+            <tr>
+                <td>Movierulz.de</td>
+                <td>Movierulz.icu</td>
+            </tr>
+            <tr>
+                <td>Movierulz.to</td>
+                <td>Movierulz.do</td>
+            </tr>
+        </tbody>
+    </table>
 </center>
-<p>These is the list of recently banned domain names of tamilrockers due to promoting pirated content</p>
-<br />
-<h2>How to Download ${name} From Tamilrockers?</h2>
-<br />
-<p>
-The biggest question that how to download your favorite web series from the TamilRockers website. first of all, just visit TamilRockers website and search for the web series you can use the search option for that or you can also search manually, and after getting a web series just click on that web series.
-</p>
-<br />
-<p>
-Here you will see two options one is for web series download and others for a watch it online now it’s up to you you want to download the web series or you want to watch it online.
-</p>
-<br />
-
-<p>
-We suggest you watch the ${name} web series free because it saves you more time and also Tamil rockers website is ads-free. which means no more disturbance of ads.
-</p>
-<br />
-<center>
-<h2>${name} Full web series Info</h2>
-<table><tbody><tr><td>Web Series Name</td><td>${name}</td></tr><tr><td>Language</td><td>${lang}</td></tr><tr><td>Country</td><td>US</td></tr><tr><td>Resolution</td><td>1080p HD, 720p, 360p, 480p</td></tr><tr><td>Budget</td><td>19 Cr</td></tr><tr><td>Rating</td><td>4.7</td></tr></tbody></table>
-  </center>
-<p>
-Now it’s up to you what you want. if you choose the download button then I will tell you that the server speed of downloading is very fast on the Tamilrockers website and you can easily and fastly download your favorite web series.
-</p>
-<button>
-<h2>Disclaimer</h2>
-
-<p>
-We never engage our visiter to go to any web series downloading websites Like Tamilrockers for the latest web series, and also we did not promote any website. This article is only for Education purposes.</p>
-
-<p>
-As per the USA act, piracy of original content is punishable. These websites are not safe to download any web series. If you want to download any web series, please download it at your own risk.
-</p>
-</button>
-
+<div><br /></div>
+<h2 style="text-align: left;">How does Movierulz make money by providing ${name} movies for free illegally?</h2>
+<div>Most everyone has this doubt in their mind that why they share this movie for free and take this much risk. Movierulz is getting a good amount of money by sharing movies online for free.&nbsp;</div>
+<div><br /></div>
+<div>They earn about 3 cores every month from their website ads. The main problem of the Movierulz website is the ads they show as popup ads which are very annoying to visitors.&nbsp;</div>
+<div><br /></div>
+<div>This is one of the major sources of their earning they have many other sources for earning. They show ads in the movies.&nbsp;</div>
+<div><br /></div>
+<div>All the movies leaked in Movierulz have ads in them. These ads irritate us very much when we watch movies.&nbsp;</div>
+<div><br /></div>
+<div>They also have a huge user base in their telegram channel. They earn a huge amount of money by doing paid promotions. 2 minutes silence for those who think that Movierulz is free.&nbsp;</div>
+<div><br /></div>
+<div>Nothing is free in this world all the services are paid so some of them make money directly and some of them make money indirectly.&nbsp;</div>
+<div><b>&nbsp;</b></div>
+<div>
+    <center>
+        <h2>${name} Full movie Info</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Movie Name</td>
+                    <td>${name}</td>
+                </tr>
+                <tr>
+                    <td>Language</td>
+                    <td>${lang}</td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>India</td>
+                </tr>
+                <tr>
+                    <td>Resolution</td>
+                    <td>1080p HD, 720p, 360p, 480p</td>
+                </tr>
+                <tr>
+                    <td>Budget</td>
+                    <td>19 Cr</td>
+                </tr>
+                <tr>
+                    <td>Rating</td>
+                    <td>4.7</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</div>
+<h2 style="text-align: left;"><b>Is downloading ${name} movies from Movierulz is illegal?</b></h2>
+<div>Yes, piracy is illegal in India according to the copyright act. You will get punished if authorities know about it.</div>
+<div><br /></div>
+<h2>&nbsp;${name} movie also leaked on these websites:</h2>
+<div>
+    <ul>
+        <li>dvplay</li>
+        <li>klwap</li>
+        <li>dvdprime</li>
+        <li>tamilrockers</li>
+        <li>isaimini</li>
+        <li>tamilgun</li>
+        <li>tamilmv</li>
+        <li>1tamilmv</li>
+        <li>isaiminiweb</li>
+        <li>isaiminida</li>
+        <li>isaiminipa</li>
+        <li>tamildbox</li>
+        <li>moviesdaweb</li>
+        <li>moviesda</li>
+        <li>marina rockers</li>
+        <li>sri rockers</li>
+        <li>kuttymovies</li>
+        <li>cooltamil</li>
+        <li>Youtube</li>
+        <li>Disney+ Hotstar</li>
+        <li>Netflix</li>
+        <li>Amazon Prime Video</li>
+        <li>ZEE5</li>
+        <li>ALT Balaji</li>
+        <li>MX Player</li>
+        <li>Hungama</li>
+        <li>BIGFlix</li>
+        <li>TnMoviez</li>
+        <li>isaidub</li>
+        <li>orutamil</li>
+        <li>a2movies</li>
+        <li>Cinemavilla</li>
+        <li>Dvdplay</li>
+        <li>mallumv</li>
+        <li>English</li>
+        <li>telegram</li>
+        <li>telegram link</li>
+        <li>isaiminimob</li>
+        <li>tamilblasters</li>
+        <li>tamilplay</li>
+        <li>jiorockers</li>
+        <li>movierulz</li>
+        <li>kotha movies</li>
+    </ul>
+</div>
+<h2>${name} <b>full Movie Download Movierulz</b></h2>
+Many people are fond of watching movies. That’s why people start searching in many ways to download movies on the internet. And at the present time, there are many such websites on Google, which provide movies to people for free. That’s why
+many people search for &nbsp;${name} Full Movie Download Movierulz on the internet to watch movies.
+<div>
+    <br />
+    <div>
+        Downloading ${name} latest ${lang} movie is very easy. Just search Movierulz and open the first website and download ${name} full movie. Always use a VPN and turn on adblocker.
+        <div><br /></div>
+        <div>
+            You will get the torrent link now extract the movie from it. I never recommend you to follow this step always watch movies on ott platforms or in theaters. Downloading movies from Movierulz is illegal never do that I am sharing
+            this information for an educational purpose. Never do this process to download ${name} movie.&nbsp;
+        </div>
+        <div><br /></div>
+        <div>
+            A movie is the hard work of many people. Many people are living with movies. So always say no to pirated content. Never promote or share pirated content it's illegal. I request all my readers to go and watch movies in theatres.
+            ${name} movie must be watched on the big screen.
+        </div>
+        <div>
+            <h2>${name}&nbsp;<b>full Movie Download Tamilrockers</b></h2>
+        </div>
+        <div>
+            <div>
+                Many people are fond of watching movies. That’s why people start searching in many ways to download movies on the internet. And at the present time, there are many such websites on Google, which provide movies to people for
+                free. That’s why many people search for&nbsp; ${name} Full Movie Download Tamilrockers on the internet to watch movies.
+            </div>
+            <div><br /></div>
+            <div>Downloading ${name} latest ${lang} movie is very easy. Just search Tamilrockers and open the first website and download ${name} full movie. Always use a VPN and turn on adblocker.</div>
+            <div><br /></div>
+            <div>
+                You will get the torrent link now extract the movie from it. I never recommend you to follow this step always watch movies on ott platforms or in theaters. Downloading movies from Tamilrockers is illegal never do that I am
+                sharing this information for an educational purpose. Never do this process to download ${name} movie.&nbsp;
+            </div>
+            <div><br /></div>
+            <div>
+                A movie is the hard work of many people. Many people are living with movies. So always say no to pirated content. Never promote or share pirated content it's illegal. I request all my readers to go and watch movies in
+                theatres. ${name} movie must be watched on the big screen.
+            </div>
+        </div>
+        <div>
+            <h2>${name}&nbsp;<b>full Movie Download&nbsp;</b>Isaimini</h2>
+            <div>
+                <div>
+                    Many people are fond of watching movies. That’s why people start searching in many ways to download movies on the internet. And at the present time, there are many such websites on Google, which provide movies to people
+                    for free. That’s why many people search for&nbsp; ${name} Full Movie Download Isaimini on the internet to watch movies.
+                </div>
+                <div><br /></div>
+                <div>Downloading ${name} latest ${lang} movie is very easy. Just search Isaimini and open the first website and download ${name} full movie. Always use a VPN and turn on adblocker.</div>
+                <div><br /></div>
+                <div>
+                    You will get the torrent link now extract the movie from it. I never recommend you to follow this step always watch movies on ott platforms or in theaters. Downloading movies from Isaimini is illegal never do that I am
+                    sharing this information for an educational purpose. Never do this process to download ${name} movie.&nbsp;
+                </div>
+                <div><br /></div>
+                <div>
+                    A movie is the hard work of many people. Many people are living with movies. So always say no to pirated content. Never promote or share pirated content it's illegal. I request all my readers to go and watch movies in
+                    theatres. ${name} movie must be watched on the big screen.
+                </div>
+            </div>
+        </div>
+        <div><br /></div>
+        <div>
+            <div>
+                <h2>${name} full Movie Download telegram?</h2>
+                <div>
+                    <div>Downloading movies from Telegram is easier than downloading from Movierulz.</div>
+                    <div><br /></div>
+                    <div>
+                        For that just search, the name of the movie in the telegram search bar and you will get the list of channels that matches the name which you have searched simply of the channels you can find the file in it.&nbsp;
+                    </div>
+                    <div><br /></div>
+                    <div>
+                        I don't recommend you to use this method also this is also illegal never try to use this method I sharing this for education purposes. I request all my visitors to watch the movie in theatres. Don't do any of these
+                        methods. All are illegal.&nbsp;
+                    </div>
+                </div>
+                <h2 style="text-align: left;">Conclusion -</h2>
+                <div>
+                    Hope everyone got the message I am sharing through his article. Never download pirated content Or use websites like Movierulz it's illegal you may go to jail if authorities know about it. So always watch movies legally.
+                    legally you found this article helpful.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h2>
+    <div class="dis1"><h2>Disclaimer</h2><p>We never engage our visiter to go to any movie downloading website Like isaimini for the latest movies, and also we did not promote any website. This article is only for Education purposes.</p><p>As per the Indian act, piracy of original content is punishable. These websites are not safe to download any movies. If you want to download any movie, please download it at your own risk. This is just a news article please don't give us dmca notice. If you want to remove this article from our website sent a mail to user24x7@protonmail.com we will remove the article immediately</p>	</div>	
 
 
 
